@@ -1,0 +1,9 @@
+cron:
+-  description: daily web crawl extractor
+   url: /tasks/webcrawler
+   schedule: every day 00:00
+   timezone: America/New_York
+   
+-  description: hourly social media extractor
+   url: /tasks/socialcrawler
+   schedule: every 48 hours

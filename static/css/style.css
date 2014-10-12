@@ -1,0 +1,24 @@
+.home-logo {
+	vertical-align: middle;
+}
+
+html, body {
+    height: 100%;
+}
+
+div.main {
+    padding-top: 30px;
+}
+
+.chart {
+    height: 300px
+}
+
+.kw-list-item {
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;        
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}

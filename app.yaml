@@ -1,0 +1,48 @@
+application: app-hrd
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+-  url: /img/(.*\.(gif|png|jpe?g))
+   static_files: static/img/\1
+   upload: static/img/(.*\.(gif|png|jpe?g))
+
+-  url: ../img
+   static_dir: static/img
+
+-  url: /html
+   static_dir: static/html
+   
+-  url: /css
+   static_dir: static/css
+
+-  url: /js
+   static_dir: static/js
+
+-  url: /favicon\.ico
+   static_files: favicon.ico
+   upload: favicon\.ico
+
+-  url: /(start|view|ajax)?
+   script: main.app
+   
+-  url: /tasks/(webcrawler|socialcrawler)?
+   script: process.app
+   login: admin
+   
+# TODO: Remember to put this in
+#-	url: /.*
+#	script: 404.html
+
+libraries:
+-  name: webapp2
+   version: "2.5.2"
+
+-  name: jinja2
+   version: "latest"
+   
+builtins:
+-  deferred: on
