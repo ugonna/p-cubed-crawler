@@ -16,7 +16,7 @@ This code is written using the Python programming language (Python 2.7) and will
 and the chances are high that those page structures have changed since this code was written (within three weeks of May
 2013). Furthermore, it uses Twitter API v1 which is now retired.
 
-It is put here for reference and for posterity, I doubt I'll be making any updates to it seeing as it was a small
+It is put here for reference and for posterity; I doubt I'll be making any updates to it seeing as it was a small
 (successful) experiment.
 
 Main modules
@@ -35,3 +35,7 @@ Libraries/tools used
 - [gae-pytz](https://code.google.com/p/gae-pytz/) for help [with timezones](http://blog.ugonna.co/2014/04/watch-clock.html)
 - [Flot Charts](http://www.flotcharts.org/) for plotting charts
 - [Twitter Bootstrap](http://getbootstrap.com/) for UI framework
+
+*******
+
+Copyright 2013 Ugonna Nwakama
